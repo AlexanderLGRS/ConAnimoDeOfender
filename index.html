@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="CADO.jpg" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>CADO</title>
+    </head>
+    <body>
+        <div class="grid">
+            <header class="header">
+                <img class="header__logo" src="./CADO.jpg" alt="Logo" />
+                <section class="header__section">Home</section>
+                <section class="header__section">Equipo</section>
+                <section class="header__section">About</section>
+                <section class="header__section">Contact</section>
+            </header>
+            <section class="left">
+                <main class="left__section--section1">
+                    <div id="player"></div>
+                    <div class="botonera">
+                        <button class="button" onclick="playPauseVideo()">
+                            <img
+                                id="playButton"
+                                src="https://img.icons8.com/material-two-tone/24/000000/pause--v1.png"
+                            />
+                        </button>
+                        <button class="button" onclick="muteUnmuteVideo()">
+                            <img
+                                id="muteButton"
+                                src="https://img.icons8.com/material-two-tone/24/000000/mute.png"
+                            />
+                        </button>
+                    </div>
+                </main>
+                <section class="left__section--section2">
+                    <h2>Comentarios</h2>
+                    <img
+                        src="https://img.icons8.com/ios/50/000000/maintenance.png"
+                    />
+                    <h2>Disponible proximamente</h2>
+                </section>
+            </section>
+            <section class="center">
+                <section class="center__section--section1">
+                    <h2>Noveadades y anuncios</h2>
+                    <img
+                        src="https://img.icons8.com/ios/50/000000/maintenance.png"
+                    />
+                    <h2>Disponible proximamente</h2>
+                </section>
+                <section class="center__section--section2">
+                    <h2>Aun no se</h2>
+                    <img
+                        src="https://img.icons8.com/ios/50/000000/maintenance.png"
+                    />
+                    <h2>Disponible proximamente</h2>
+                </section>
+            </section>
+            <section class="carousel">
+                <div class="carousel__container">
+
+                    <!-- Capitulos de 81 al 90  -->
+
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('7o4yZaUtXO0')"
+                            src="https://i.ytimg.com/vi/7o4yZaUtXO0/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCmXwI2OTmkt2xRePOtRV_IJbA5mw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('jlFSuH7XkpI')"
+                            src="https://i.ytimg.com/vi/jlFSuH7XkpI/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDdwazDvUree5snlWTkUSZvySs4tA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('hqBPQ_nF4P4')"
+                            src="https://i.ytimg.com/vi/hqBPQ_nF4P4/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAbsdfotTsC46Ed_R_6MI-Qnz1USg"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('L3G1UX_eJV0')"
+                            src="https://i.ytimg.com/vi/L3G1UX_eJV0/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBlJIFb6JTBWuqB-QU0cXEgv8-mBg"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('SxZaAx4IGpw')"
+                            src="https://i.ytimg.com/vi/SxZaAx4IGpw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBlVdOifcMo5BV0VkKk58YQzvcIeA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('WgYhxqZUASk')"
+                            src="https://i.ytimg.com/vi/WgYhxqZUASk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCNfTVqmLNQgJNJ_Sci0OR2nHz82Q"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item83" onclick="loadVideo('I4AXtbSSfk0')"
+                            src="https://i.ytimg.com/vi/I4AXtbSSfk0/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCb7WvL0kWnPoI2TGHeJj0yjlrXKA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('jxsUIUd6T8U')"
+                            src="https://i.ytimg.com/vi/jxsUIUd6T8U/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBEMMHx_R51-UzwEp3lJlyKvsnssw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('FmIXmUkxOxA')"
+                            src="https://i.ytimg.com/vi/FmIXmUkxOxA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCK0UVeMNmX7U3Akm2wWJIDzUsorA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <!-- Capitulos de 71 al 80  -->
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('CF4_ZBGTjhI')"
+                            src="https://i.ytimg.com/vi/CF4_ZBGTjhI/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAkmuaJlTwImq8h9zFryAYyQ2xtjA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('HT81477ynJw')"
+                            src="https://i.ytimg.com/vi/HT81477ynJw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLD59Fnp47KembrlLdCiyXPOy20h5w"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('0xqbHW_O4GA')"
+                            src="https://i.ytimg.com/vi/0xqbHW_O4GA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLB5CTBNYeBV8bmARL6BFhOXQFs6Kg"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('4p_FLxgbHrQ')"
+                            src="https://i.ytimg.com/vi/4p_FLxgbHrQ/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCV_X4sOwV3MAONuiiFFIFoEMFZ_g"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('UJio54oZ7xY')"
+                            src="https://i.ytimg.com/vi/UJio54oZ7xY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAiWOyav8DFFdoQr8SWHboErvJMXw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('SLmUV9QkofE')"
+                            src="https://i.ytimg.com/vi/SLmUV9QkofE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBB_Z-1oSC8G69PfT1tefXDBoHcaQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('6VIej-PIQYE')"
+                            src="https://i.ytimg.com/vi/6VIej-PIQYE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB01NfBPMdn0CgknKq-RrWwORAXcw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('v8KWyLEMFn8')"
+                            src="https://i.ytimg.com/vi/v8KWyLEMFn8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDv3wBK7QYO1fLAWSI7IUHqbE59cg"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('7uhjdUDXMh8')"
+                            src="https://i.ytimg.com/vi/7uhjdUDXMh8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCi2JcDlI_wfsSjFYwe5L2n0SDobw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('RW03ahBWhuY')"
+                            src="https://i.ytimg.com/vi/RW03ahBWhuY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDkuRjpxXPw-omtMIp367-uFGP8UA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <!-- Capitulos de 61 al 70  -->
+
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('hY8VXU3B8HI')"
+                            src="https://i.ytimg.com/vi/hY8VXU3B8HI/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBEyK4qf1wS7uVmoxEgqMiWrFAQBA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('dqfxnjAJygQ')"
+                            src="https://i.ytimg.com/vi/dqfxnjAJygQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCvVkjIooMwYUJMg1QinDoCN66-NA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('bWlSeINn5YU')"
+                            src="https://i.ytimg.com/vi/bWlSeINn5YU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBmSSR68gmepo85Vp6bFcQ5bQtwFw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('ZsBWnEpTmt0')"
+                            src="https://i.ytimg.com/vi/ZsBWnEpTmt0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBD9rBjeuGVPW9L1rzE_618lS4DkQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('k6yFsn3Dg0A')"
+                            src="https://i.ytimg.com/vi/k6yFsn3Dg0A/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDZMQvR9IKIf77kGcjj0-a5o_y92w"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('GF5XBMnxq8Q')"
+                            src="https://i.ytimg.com/vi/GF5XBMnxq8Q/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAAMZAOcMkq0K80nlTvlbICgAXykw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('W4it4Rctl-M')"
+                            src="https://i.ytimg.com/vi/W4it4Rctl-M/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAfE5MEEb3W8THmpcjeEntlgZY3aQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('G5h6kY92rIo')"
+                            src="https://i.ytimg.com/vi/G5h6kY92rIo/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDk7nZcY8RL-dzY1WryhFIyWWx64g"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('P3zyTuMhS9k')"
+                            src="https://i.ytimg.com/vi/P3zyTuMhS9k/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDRH31aTnAKJers6YBf1_QBbEGSng"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('6UEmuBkKF_Q')"
+                            src="https://i.ytimg.com/vi/6UEmuBkKF_Q/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAtxFJZ9jOjwJtKx-swHKE34tHnpA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <!-- Capitulos de 51 al 60  -->
+
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('aDtBpfaXoEc')"
+                            src="https://i.ytimg.com/vi/aDtBpfaXoEc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB4eXdvHXj-GcekoJFoqx0AAcmEVQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('Xt7IZ73WLss')"
+                            src="https://i.ytimg.com/vi/Xt7IZ73WLss/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBGzZbEYwHSA086U2CzeqZsLaX0vA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('Oa38B5qsqaM')"
+                            src="https://i.ytimg.com/vi/Oa38B5qsqaM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAMzSafeHLc1PoPrG2_aF6JvNa6Kw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('DNAkZgvqlqc')"
+                            src="https://i.ytimg.com/vi/DNAkZgvqlqc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBbDA40Qbm6FCUaYtMmlasd9doHTQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('ugF6cKoQSDc')"
+                            src="https://i.ytimg.com/vi/ugF6cKoQSDc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA8tIn9IDilRhyxpiqrqvOLC6aZ4w"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('kgzvj29woes')"
+                            src="https://i.ytimg.com/vi/kgzvj29woes/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB8qiBuVyDZAxS1n-wgPcgwbI9bYw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('2XL8IBaxYww')"
+                            src="https://i.ytimg.com/vi/2XL8IBaxYww/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDIjrr73hZASmtwO-C1MA7vgG0uEQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('AxJab9eotb0')"
+                            src="https://i.ytimg.com/vi/AxJab9eotb0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDBIZwdFq1FK3mQj7y2oG0R3aBb8w"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('4Y7j7qFY3Sk')"
+                            src="https://i.ytimg.com/vi/4Y7j7qFY3Sk/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAJ8Qmw5yQhtN6h2OQxLcOWHiaUIw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('zomnctmaTHg')"
+                            src="https://i.ytimg.com/vi/zomnctmaTHg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBchr1aXXiTimP31q8uHeP7tbrw-Q"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <!-- Capitulos de 41 al 50  -->
+
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('TfOHSH9N3nM')"
+                            src="https://i.ytimg.com/vi/TfOHSH9N3nM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCqZce-VcHrtrO0GmPsVp8HEs8xZg"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('yZHLNvUEM5M')"
+                            src="https://i.ytimg.com/vi/yZHLNvUEM5M/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCQZ6zEfwWlPKDmP_JPIMM8RQ_f7g"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('fp42pxmN22g')"
+                            src="https://i.ytimg.com/vi/fp42pxmN22g/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAaPcKuR287Lv3OTN99S1GLQIyYxw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('iqgPYMYeQZY')"
+                            src="https://i.ytimg.com/vi/iqgPYMYeQZY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCl9dbT8_pCZlEE0r-3u31yKmIerQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('VNKxH-VSM98')"
+                            src="https://i.ytimg.com/vi/VNKxH-VSM98/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDPoG2eqz0dTf6fKWkAcspHGWtvDQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('ZAjfmaq0zx4')"
+                            src="https://i.ytimg.com/vi/ZAjfmaq0zx4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCNVUoGMO7GFv3-8Da0t9dALBls4Q"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('hEe0ZXjDEpI')"
+                            src="https://i.ytimg.com/vi/hEe0ZXjDEpI/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCs5262W3NHZCgqE_hWrl1bnmylAw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('pwzF1MGoQ9c')"
+                            src="https://i.ytimg.com/vi/pwzF1MGoQ9c/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAm34FmDpOZiwYkvbNwtTkIYAThrQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('0QA78q_Wmy4')"
+                            src="https://i.ytimg.com/vi/0QA78q_Wmy4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDcQ0rSCpa1Fty6eWYAwWp1pAS17A"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('0r-srRuA28c')"
+                            src="https://i.ytimg.com/vi/0r-srRuA28c/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB9Vy7196vbSxOQnEXTybiGzaq-gA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <!-- Capitulos de 31 al 40  -->
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('xipjv4iRvUs')"
+                            src="https://i.ytimg.com/vi/xipjv4iRvUs/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBpSR3oojvuSWemfK8D6PBQqQl6sw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('P62VMNFXveA')"
+                            src="https://i.ytimg.com/vi/P62VMNFXveA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBWnxVWyJqRUoa0SB7KEs0EmJKDEQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('Pv5iJPhhgp4')"
+                            src="https://i.ytimg.com/vi/Pv5iJPhhgp4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCKGxSy5D9Uw0lurG4MOqkVvihczA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('fPtViO9UP0E')"
+                            src="https://i.ytimg.com/vi/fPtViO9UP0E/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAw9gHH1N4TJZJPVZR-dgsnqHTSYQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('W6iBwy4yrVM')"
+                            src="https://i.ytimg.com/vi/W6iBwy4yrVM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAQ289pL57tCaEs67NaiJP5BjOOIw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('BvDBJT1AsgY')"
+                            src="https://i.ytimg.com/vi/BvDBJT1AsgY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAeOnMH8pBBoHi8dPnlMk23E-BnCA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('PzqBXR1hWOQ')"
+                            src="https://i.ytimg.com/vi/PzqBXR1hWOQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAhFDgqm9QiFUNgMkEL04qtJwoarw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('fvlIgP78FCk')"
+                            src="https://i.ytimg.com/vi/fvlIgP78FCk/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVB1ULv-heU-Lp603kuT3ZLOmmkw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('kkPZlzv_mFE')"
+                            src="https://i.ytimg.com/vi/kkPZlzv_mFE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD_VwuZDS_cTt9S7e3h5S46AiA2aw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('LXlbT31I_LE')"
+                            src="https://i.ytimg.com/vi/LXlbT31I_LE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDNckcgBdiir-OKLb196VlGJsvRdw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <!-- Capitulos de 21 al 30  -->
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('Z-uxac8w9GM')"
+                            src="https://i.ytimg.com/vi/Z-uxac8w9GM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCoQRoBRdzhCutySQ3TuEpH0U4r2A"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('7qfVD0MojkM')"
+                            src="https://i.ytimg.com/vi/7qfVD0MojkM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLACnxUpWPfsmDuvClyMw9pb4esesA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('ZRcD7LQ4RY4')"
+                            src="https://i.ytimg.com/vi/ZRcD7LQ4RY4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCakKWQcWGNEE64Tu7bEdGuHOWp4A"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('InG4ij8bKuE')"
+                            src="https://i.ytimg.com/vi/InG4ij8bKuE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBEhWSyu4BLLSNKHfjPr7KXIRbGAQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('qZplu15RVO8')"
+                            src="https://i.ytimg.com/vi/qZplu15RVO8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAeoi3U6ASESuapUI57LH32Fg039A"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('ZSqkDxjiY2U')"
+                            src="https://i.ytimg.com/vi/ZSqkDxjiY2U/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCaNK19tQqkyYdON0KlzOnglAOVpQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('KYzZ3hvMcqU')"
+                            src="https://i.ytimg.com/vi/KYzZ3hvMcqU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCJO5hnppXPu_3YjSuMVggQXuQoiQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('YRIYtjPK5kw')"
+                            src="https://i.ytimg.com/vi/YRIYtjPK5kw/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAhdiwlKxrg5bNnyJBSV4qdjqdWVA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('ahHm6_gtUjg')"
+                            src="https://i.ytimg.com/vi/ahHm6_gtUjg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBffQjU5zC0DRR7GusOb3DcTpCDGg"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('ebw_gbdnTX8')"
+                            src="https://i.ytimg.com/vi/ebw_gbdnTX8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDZ1wQzlWzzO74ck-fFz2DmjcyVnA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <!-- Capitulos de 11 al 20  -->
+
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('4xIQDhrDsDg')"
+                            src="https://i.ytimg.com/vi/4xIQDhrDsDg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCFvQxw9EFgmDtMjyGwkmPp_YPiGw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('UbjymSNybxY')"
+                            src="https://i.ytimg.com/vi/UbjymSNybxY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLC4mhx-Ns0rgnKPQ94DEP5DtgSBQw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('o41HuhiGMUo')"
+                            src="https://i.ytimg.com/vi/o41HuhiGMUo/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDrYacU6iBCTOKhzUw4CbYGBLu_HQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('DXjaFng7Qos')"
+                            src="https://i.ytimg.com/vi/DXjaFng7Qos/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDSZd-_0e4eYRxpFTpEx37wY6vliQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('ro1DUP1N26w')"
+                            src="https://i.ytimg.com/vi/ro1DUP1N26w/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCFEP4oxzhyu5jVL_X3rF5iczQhzA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('ETRquj8dJeU')"
+                            src="https://i.ytimg.com/vi/ETRquj8dJeU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLANxOFwBMtjQsK80n0OKipTdvX1PQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('OED7oOvVxaY')"
+                            src="https://i.ytimg.com/vi/OED7oOvVxaY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDqDY5groGfV1E9bEM6SWDfuqCLYw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('uLfplYpT-G8')"
+                            src="https://i.ytimg.com/vi/uLfplYpT-G8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCTbPMIl73F9O_hbl19O02Tq5D_pA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('9ehrZrvPoOs')"
+                            src="https://i.ytimg.com/vi/9ehrZrvPoOs/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDSu7BK1k0kotUf_jaGVBJkfXvYkQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('an_fRV-1Kmg')"
+                            src="https://i.ytimg.com/vi/an_fRV-1Kmg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBuGn9yAet64HtW66jvsJa_KpCu4w"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <!-- Capitulos de 1 al 10  -->
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('Oj_hCIpHBVE')"
+                            src="https://i.ytimg.com/vi/Oj_hCIpHBVE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD2vc3J2DeBNJGWww64tIsVUzY5MQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('N2k5OSsH390')"
+                            src="https://i.ytimg.com/vi/N2k5OSsH390/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD06WUdsIwxVQQiXPjbjR6QCwWzvA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('69qD_iCAKTc')"
+                            src="https://i.ytimg.com/vi/69qD_iCAKTc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDU9sU8VyRXk8zJr0cJumZmpCdUeQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('JDaU1E_Mk2M')"
+                            src="https://i.ytimg.com/vi/JDaU1E_Mk2M/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB7-d8UeOaAZViHBfchC0fzOEYCmw"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('XNHKvL3BAAo')"
+                            src="https://i.ytimg.com/vi/XNHKvL3BAAo/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBzHa4V-1Cy-P_kokmbTUi-52tffg"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('iFdiBifUnfQ')"
+                            src="https://i.ytimg.com/vi/iFdiBifUnfQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBIp-zXgpHrj0IW5OkVIjIBR6jUvA"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('mqmSRW9OAjw')"
+                            src="https://i.ytimg.com/vi/mqmSRW9OAjw/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCfYoEx83jCLhb-6TVqFotK8WclLQ"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('3J_b_092y1k')"
+                            src="https://i.ytimg.com/vi/3J_b_092y1k/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA6KkQ5KGotQ1i9R_PTBiEsEVF7Wg"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('cFQZbvzXEJU')"
+                            src="https://i.ytimg.com/vi/cFQZbvzXEJU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDIj4vzpvdaeZHqhJ094haPsZuz4g"
+                            alt="Video"
+                        />
+                    </div>
+
+                    <div class="carousel__container--item">
+                        <img
+                            id="carousel__container--item" onclick="loadVideo('YIbKnaakTRU')"
+                            src="https://i.ytimg.com/vi/YIbKnaakTRU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB4GBRbHXAa8O5EilGaAdjZLJOzUQ"
+                            alt="Video"
+                        />
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <a class="footer__item" href="/">Términos de uso</a>
+                <a class="footer__item" href="/">Condiciones de privacidad</a>
+                <a class="footer__item" href="/">Centro de ayuda</a>
+            </footer>
+        </div>
+        <script src="logic.js"></script>
+    </body>
+</html>
+
